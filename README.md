@@ -59,3 +59,19 @@ foreach ($api->getPostsByUserId(1) as $value) {
     echo $value->title;
 }
 ```
+
+```html
+User: Ervin Howell
+Update name for Ervin Howell => New Name
+
+Create new User, new user id: 11
+User 1 tasks:
+1: delectus aut autem is uncompleted
+2: quis ut nam facilis et officia qui is uncompleted
+...
+User 1 posts:
+1: sunt aut facere repellat provident occaecati excepturi optio reprehenderit
+2: qui est esse
+...
+
+```
