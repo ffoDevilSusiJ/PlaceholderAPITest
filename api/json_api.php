@@ -1,5 +1,5 @@
 <?php
-require_once('./http_api.php');
+require_once('http_api.php');
 require_once('utils/curl_handler.php');
 class JSONPlaceholderAPI implements HttpAPI {
     private String $url;

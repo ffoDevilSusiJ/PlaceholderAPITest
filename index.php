@@ -1,5 +1,5 @@
 <?php
-require_once('./json_api.php');
+require_once('api/json_api.php');
 
 
 $api = new JSONPlaceholderAPI("https://jsonplaceholder.typicode.com/");
