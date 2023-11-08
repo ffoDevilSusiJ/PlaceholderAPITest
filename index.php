@@ -1,10 +1,8 @@
 <?php
 require_once('./json_api.php');
+
+
 $api = new JSONPlaceholderAPI("https://jsonplaceholder.typicode.com/");
-
-
-
-
 $user = $api->getUserById(2);
 //Get user
 echo "User: " . $api->getUserById(2)->name . "</br>";
