@@ -3,6 +3,10 @@
 
 This project provides a set of functions to interact with the JSONPlaceholder API. The API provides fake data for testing and prototyping.
 
+## Requirements
+
+* PHP 7.4
+
 ## Functions
 
 ### Users
