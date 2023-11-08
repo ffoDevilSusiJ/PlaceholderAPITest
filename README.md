@@ -1,5 +1,5 @@
 
-# ApiLib
+# PlaceholderAPITest
 
 This project provides a set of functions to interact with the JSONPlaceholder API. The API provides fake data for testing and prototyping.
 
