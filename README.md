@@ -31,7 +31,7 @@ This project provides a set of functions to interact with the JSONPlaceholder AP
 
 ### Example
 
-```python
+```php
 $api = new JSONPlaceholderAPI("https://jsonplaceholder.typicode.com/");
 $user = $api->getUserById(2);
 //Get user
