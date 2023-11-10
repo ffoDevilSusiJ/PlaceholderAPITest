@@ -1,4 +1,5 @@
 <?php
+namespace Utils;
 
 class CurlHandler {
     public function get($url) {
@@ -13,7 +14,7 @@ class CurlHandler {
         curl_close($curl);
         
         if($json == "{}") {
-            throw new Exception("Error with code: " . $code);
+            throw new \Exception("Error with code: " . $code);
         }
         return ["body" => json_decode($json), "code" => $code];
     }
@@ -34,7 +35,7 @@ class CurlHandler {
         curl_close($curl);
 
         if($json == "{}") {
-            throw new Exception("Error with code: " . $code);
+            throw new \Exception("Error with code: " . $code);
         }
         return ["body" => json_decode($json), "code" => $code];
     }
@@ -53,7 +54,7 @@ class CurlHandler {
 
         curl_close($curl);
         if($json == "{}") {
-            throw new Exception("Error with code: " . $code);
+            throw new \Exception("Error with code: " . $code);
         }
         return ["body" => json_decode($json), "code" => $code];
     }

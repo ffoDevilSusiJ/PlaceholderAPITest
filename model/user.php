@@ -1,5 +1,5 @@
 <?php
-
+namespace Model;
 class User {
     public $id;
     public string $name;
@@ -9,7 +9,7 @@ class User {
 
     public function __construct($data = []) {
         $data = (array)$data;
-        $this->id = $data["id"] ? $data["id"] : 1;
+        $this->id = isset($data["id"]) ? $data["id"] : 1;
         $this->name = $data["name"];
         $this->username = $data["username"];
         $this->email = $data["email"];

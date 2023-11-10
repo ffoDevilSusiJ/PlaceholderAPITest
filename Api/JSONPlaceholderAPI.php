@@ -1,7 +1,11 @@
 <?php
-require_once('http_api.php');
-require_once('utils/curl_handler.php');
-class JSONPlaceholderAPI implements HttpAPI {
+namespace Api;
+use Utils\CurlHandler;
+use Model\Post;
+use Model\User;
+use Model\Task;
+
+class JSONPlaceholderAPI implements IHttpAPI {
     private String $url;
     private $curl;
     public function __construct(String $url) {

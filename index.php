@@ -1,6 +1,9 @@
 <?php
-require_once('api/json_api.php');
-
+use API\JSONPlaceholderAPI;
+use Model\User;
+spl_autoload_register(function ($className) {
+    require_once __DIR__ . '/' . str_replace('\\', '/', $className) . '.php';
+});
 
 $api = new JSONPlaceholderAPI("https://jsonplaceholder.typicode.com/");
 $user = $api->getUserById(2);

@@ -1,8 +1,10 @@
 <?php 
-require_once('model/user.php');
-require_once('model/post.php');
-require_once('model/task.php');
-interface HttpAPI {
+namespace Api;
+use Model\Post;
+use Model\User;
+use Model\Task;
+
+interface IHttpAPI {
     function getAllUsers() : array;
     function getUserById(int $id): User;
     function addUser(User $user): User;

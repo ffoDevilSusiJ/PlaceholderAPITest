@@ -1,4 +1,5 @@
 <?php
+namespace Model;
 
 class Post {
     public int $userId;
